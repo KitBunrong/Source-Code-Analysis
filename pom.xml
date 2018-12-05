@@ -328,7 +328,17 @@
                 <target>1.8</target>
             </configuration>
         </plugin>
+        
+        
+        <!-- Plugin from bong Tola -->
+        <plugin>
+               <groupId>org.eluder.coveralls</groupId>
+               <artifactId>coveralls-maven-plugin</artifactId>
+               <version>4.3.0</version>
+        </plugin>
 
+
+    
     </plugins>
     <pluginManagement>
     	<plugins>
@@ -364,5 +374,16 @@
     	</plugins>
     </pluginManagement>
  </build>
+ <!-- Copy from bong Tola -->
+ <reporting>
+       <plugins>
+           <plugin>
+               <groupId>org.jacoco</groupId>
+               <artifactId>jacoco-maven-plugin</artifactId>
+               <version>${jacoco.version}</version>
+           </plugin>
+       </plugins>
+ 
+</reporting>
 
 </project>
